@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #ff4d4d;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-link {
+    color: #333 !important;
+    transition: 0.3s;
+}
+
+.nav-item.active .nav-link {
+    background-color: #ff4d4d !important;
+}
+
+.carousel-item img {
+    height: 550px;
+    object-fit: cover;
+}
+
+.img-fluid {
+    transition: 0.3s;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
